@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Usuario | Demo</title>
+
+  <!-- Bootstrap 5 -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"
+  />
+</head>
+<body class="bg-light">
+
+  <!-- Navbar  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="../index.html">Dom</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="mainNav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="../index.html">Registro</a></li>
+          <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./user.html" aria-current="page">Usuario</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-4">
+    <h1 class="h3 mb-3">Perfil del usuario</h1>
+
+    <div id="userAlert" class="alert alert-warning d-none" role="alert"></div>
+
+    <div class="card shadow-sm p-3 bg-white">
+      <div class="d-flex align-items-center">
+        <img id="userAvatar" src="../assets/avatar.jpg" alt="Avatar del usuario" class="rounded-circle me-3" width="72" height="72">
+        <div>
+          <h2 id="userName" class="h5 mb-1">Nombre</h2>
+          <p id="userEmail" class="text-muted mb-0">correo@ejemplo.com</p>
+        </div>
+      </div>
+
+      <hr class="my-3">
+
+      <div class="d-flex gap-2">
+        <a class="btn btn-outline-secondary" href="../index.html">Editar (volver a registrar)</a>
+        <button id="logoutBtn" class="btn btn-outline-danger">Cerrar sesión</button>
+      </div>
+    </div>
+  </main>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
